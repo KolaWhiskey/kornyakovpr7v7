@@ -1,0 +1,47 @@
+﻿<Window x:Class="kornyakovpr7v7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kornyakovpr7v7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu VerticalAlignment = "Top" >
+            <MenuItem Header="Файл" >
+                <MenuItem x:Name="Exit" Header="Выход" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header = "О программе" >
+                <MenuItem x:Name="Info" Header="О программе" Click="Info_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <TextBox HorizontalAlignment="Left" Margin="470,0,0,0"  TextWrapping="Wrap" VerticalAlignment="Center" Width="223" x:Name="Sravnenie0" IsReadOnly="True" Height="47"/>
+        <TextBlock HorizontalAlignment="Left" Margin="516,168,0,0" Text="Результат сравнения" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+        <Button Content="Сравнение" HorizontalAlignment="Left" Margin="470,268,0,0" VerticalAlignment="Top" Height="25" Width="109" x:Name="BtSravnenie" Click="BtSravnenie_Click"/>
+        <Button Content="Очистка" HorizontalAlignment="Left" Margin="584,268,0,0" VerticalAlignment="Top" Height="25" Width="109" x:Name="Ochistka" Click="Ochistka_Click"/>
+
+
+        <Grid  Margin="26,108,570,107">
+            <TextBox HorizontalAlignment="Center" Margin="0,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" x:Name="FirstTr1"/>
+            <TextBox HorizontalAlignment="Center" Margin="0,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" x:Name="SecondTr1"/>
+            <TextBox HorizontalAlignment="Center" Margin="0,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" x:Name="TherdTr1"/>
+            <TextBlock HorizontalAlignment="Center" Margin="0,17,0,0" Text="День" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Center" Margin="0,79,0,0" Text="Месяц" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Center" Margin="0,137,0,0" Text="Год" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <Label Content="Первая дата" HorizontalAlignment="Left" Margin="0,-14,0,0" VerticalAlignment="Top"/>
+
+        </Grid>
+        <Grid  Margin="196,108,400,107">
+            <TextBox HorizontalAlignment="Center" Margin="0,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" x:Name="FirstTr2"/>
+            <TextBox HorizontalAlignment="Center" Margin="0,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" x:Name="SecondTr2"/>
+            <TextBox HorizontalAlignment="Center" Margin="0,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" x:Name="TherdTr2"/>
+            <TextBlock HorizontalAlignment="Center" Margin="0,17,0,0" Text="День" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Center" Margin="0,79,0,0" Text="Месяц" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Center" Margin="0,137,0,0" Text="Год" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <Label Content="Вторая дата" HorizontalAlignment="Left" Margin="0,-14,0,0" VerticalAlignment="Top"/>
+
+        </Grid>
+    </Grid>
+</Window>
